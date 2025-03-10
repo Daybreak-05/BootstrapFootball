@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Liga de Fútbol Instituto</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Liga Escolar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calendario.html">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="text-center p-5 bg-light mt-5">
+        <h1>Contacto</h1>
+        <p>Si tienes alguna pregunta o comentario, ¡no dudes en ponerte en contacto con nosotros!</p>
+        <img src="https://picsum.photos/1200/400?random=3" class="img-fluid mt-3" alt="Imagen de Contacto">
+    </header>
+
+    <!-- Formulario de Contacto -->
+    <section class="container mt-5">
+        <h2 class="text-center">Formulario de Contacto</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="container mt-5">
+        <h3 class="text-center">Datos de Contacto</h3>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Teléfono:</strong> +34 123 456 789</li>
+            <li class="list-group-item"><strong>Correo:</strong> contacto@ligaescolar.com</li>
+            <li class="list-group-item"><strong>Dirección:</strong> Calle Fútbol 123, Ciudad Deportiva</li>
+        </ul>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer text-center p-3 mt-5">
+        <p>&copy; 2025 Liga de Fútbol Escolar. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

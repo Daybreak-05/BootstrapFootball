@@ -1,0 +1,41 @@
+// Colores Personalizados
+$primary-color: #1e3a8a;  // Azul oscuro
+$secondary-color: #facc15; // Amarillo dorado
+$background-color: #f4f4f4; // Fondo claro
+$highlight-color: #4caf50; // Verde para resaltar
+$dark-overlay-color: rgba(230, 230, 230, 0.5); // Color de overlay oscuro
+$black: #353535;
+$white: #efefef;
+
+// Gradientes
+$gradient-primary: linear-gradient(135deg, #1e3a8a, #facc15); // Gradiente azul a amarillo
+
+// Fuentes Personalizadas
+@font-face {
+  font-family: "Arcane Nine";
+  src: url("../fonts/ArcaneNine.otf") format("truetype");
+}
+
+$font-primary: "Arial", sans-serif;
+$font-heading: "Arcane Nine", sans-serif;
+
+// Tamaños de fuente
+$font-size-base: 1rem;
+$font-size-sm: 0.9rem;
+$font-size-md: 1.1rem;
+$font-size-lg: 1.2rem;
+$font-size-xl: 1.5rem;
+$font-size-heading: 2rem;
+
+// Sombra de tarjeta
+$card-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+
+//Sombra de texto
+$text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.394);
+
+// Espaciado de márgenes
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;

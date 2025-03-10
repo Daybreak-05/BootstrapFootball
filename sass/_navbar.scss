@@ -1,0 +1,15 @@
+@import "variables";
+.navbar {
+    background: linear-gradient(135deg, $primary-color, darken($primary-color, 10%));
+
+    .nav-link {
+        color: white !important;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: $secondary-color !important;
+        }
+    }
+}

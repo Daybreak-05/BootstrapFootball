@@ -1,0 +1,53 @@
+.card {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: $card-shadow;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: $spacing-lg;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-header {
+        background-color: $secondary-color;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: $font-size-lg;
+    }
+
+    .card-body {
+        background-color: $background-color;
+        padding: $spacing-md;
+    }
+
+    .card-title {
+        font-family: $font-heading;
+        font-size: $font-size-xl;
+        color: $primary-color;
+    }
+
+    .card-text {
+        font-size: $font-size-base;
+        color: darken($primary-color, 20%);
+    }
+
+    // Agregar una imagen de fondo con overlay oscuro
+    &.card-background {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        color: white;
+
+        .card-header {
+            background-color: rgba(0, 0, 0, 0.367);
+        }
+
+        .card-title,
+        .card-text {
+            color: $black;
+        }
+        
+    }
+}

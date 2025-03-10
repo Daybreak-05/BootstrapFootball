@@ -1,0 +1,213 @@
+// ruta bs
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "navbar";@import "variables";
+@import "cards";
+
+// Estilos generales
+body {
+    font-family: $font-primary;
+    background-color: $background-color;
+    margin-top: $spacing-xl;
+}
+
+h1, h2, h3 {
+    font-family: $font-heading;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+header {
+    color: $primary-color;
+    padding: $spacing-lg;
+    position: relative;
+    font-size: $font-size-xl;
+
+    h1, p {
+        z-index: 1;
+    }
+
+}
+
+p{
+    text-shadow: $text-shadow;
+}
+
+h4{
+    font-size: $font-size-xl;
+    color: $primary-color;
+}
+
+section {
+    padding: $spacing-lg;
+    background: $dark-overlay-color;
+    color: $black;
+    border-radius: 8px;
+    margin-top: $spacing-xl;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.calendar-container {
+    padding: $spacing-md;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+// Media Queries para dispositivos más pequeños
+
+@media (max-width: 1200px) {
+    // Para pantallas pequeñas de tabletas
+    header {
+        padding: $spacing-md;
+    }
+
+    .card {
+        margin-bottom: $spacing-md;
+    }
+
+    .card-title {
+        font-size: $font-size-lg;
+    }
+
+    .calendar-container {
+        padding: $spacing-sm;
+    }
+
+    .container {
+        margin-top: $spacing-md;
+    }
+
+    // Asegurar que el grid se centre
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: $spacing-md;
+        display: flex;
+        justify-content: center; // Centrado horizontal
+    }
+}
+
+@media (max-width: 768px) {
+    // Para pantallas de smartphones
+    header {
+        padding: $spacing-sm;
+    }
+
+    .card {
+        margin-bottom: $spacing-sm;
+    }
+
+    .card-title {
+        font-size: $font-size-md;
+    }
+
+    .card-text {
+        font-size: $font-size-base;
+    }
+
+    // Cambiar el tamaño de las tablas para que se ajusten a móviles
+    .calendar-container {
+        padding: $spacing-xs;
+    }
+
+    .calendar-container table {
+        font-size: 0.9rem;
+    }
+
+    // Para la visualización de las tarjetas de equipos en modo lista
+    .row {
+        display: block;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: $spacing-sm;
+    }
+
+    .calendar-container table th, .calendar-container table td {
+        padding: 5px;
+    }
+}
+
+// Media Query para pantallas más pequeñas
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .calendar-container {
+        padding: $spacing-xs;
+    }
+
+    .container {
+        padding: $spacing-sm;
+    }
+
+    .card {
+        padding: $spacing-xs;
+    }
+
+    .calendar-container table {
+        font-size: 0.8rem;
+    }
+}
+
+footer{
+    background: linear-gradient(135deg, $primary-color, darken($primary-color, 10%));
+    text-align: center;
+    color: $white;
+}
+
+// Animaciones generales
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// Animación en el Header
+header {
+    animation: fadeIn 1.5s ease-out;
+}
+
+// Animación de los títulos de la sección
+section h4 {
+    animation: zoomIn 1.5s ease-out;
+}
+
+
+
+// Para el calendario
+.calendar-container {
+    animation: zoomIn 1.5s ease-out;
+}
