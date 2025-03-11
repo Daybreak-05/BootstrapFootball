@@ -31,6 +31,7 @@ header {
 
 p{
     text-shadow: $text-shadow;
+    font-size: $font-size-base;
 }
 
 h4{
@@ -59,7 +60,7 @@ section {
 
 // Media Queries para dispositivos más pequeños
 
-@media (max-width: 1200px) {
+@media (max-width: 1800px) {
     // Para pantallas pequeñas de tabletas
     header {
         padding: $spacing-md;
@@ -98,7 +99,7 @@ section {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     // Para pantallas de smartphones
     header {
         padding: $spacing-sm;

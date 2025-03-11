@@ -11910,7 +11910,7 @@ textarea.form-control-lg {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Times New Roman", sans-serif;
   background-color: #f4f4f4;
   margin-top: 3rem;
 }
@@ -11933,6 +11933,7 @@ header h1, header .h1, header p {
 
 p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.394);
+  font-size: 1rem;
 }
 
 h4, .h4 {
@@ -11958,7 +11959,7 @@ section .container {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1800px) {
   header {
     padding: 1.5rem;
   }
@@ -11988,7 +11989,7 @@ section .container {
     justify-content: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   header {
     padding: 1rem;
   }
