@@ -12015,14 +12015,11 @@ footer {
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(2, 1fr));
+    grid-template-columns: repeat(2, minmax(1, 1fr));
     gap: 20px;
   }
   .container {
     margin: 0 auto;
-  }
-  .card {
-    margin-bottom: 1rem;
   }
   .card-title {
     font-size: 1.1rem;

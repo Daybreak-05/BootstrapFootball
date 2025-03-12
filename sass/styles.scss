@@ -64,8 +64,6 @@ footer{
 }
 
 
-// Media Queries para dispositivos más pequeños
-
 @media (max-width: 1800px) {
     // Para pantallas pequeñas de tabletas
     header {
@@ -134,16 +132,14 @@ footer{
 
     .grid{
         display: grid;
-        grid-template-columns: repeat(2, minmax(2, 1fr));
+        grid-template-columns: repeat(2, minmax(1, 1fr));
         gap: 20px;
     }
 
     .container{
         margin: 0 auto;
     }
-    .card {
-        margin-bottom: $spacing-sm;
-    }
+
 
     .card-title {
         font-size: $font-size-md;
@@ -212,7 +208,6 @@ footer{
     
 }
 
-// Media Query para pantallas más pequeñas
 @media (max-width: 480px) {
     
     header h1 {
