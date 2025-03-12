@@ -20,7 +20,6 @@ h1, h2, h3 {
 header {
     color: $primary-color;
     padding: $spacing-lg;
-    position: relative;
     font-size: $font-size-xl;
 
     h1, p {
@@ -58,6 +57,13 @@ section {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
+footer{
+    background: linear-gradient(135deg, $primary-color, darken($primary-color, 10%));
+    text-align: center;
+    color: $white;
+}
+
+
 // Media Queries para dispositivos más pequeños
 
 @media (max-width: 1800px) {
@@ -65,6 +71,8 @@ section {
     header {
         padding: $spacing-md;
     }
+
+    
 
     .card {
         margin-bottom: $spacing-md;
@@ -91,6 +99,12 @@ section {
         margin-right: 0;
     }
 
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(3, 1fr));
+        gap: 20px;
+    }
+
     .col-md-6 {
         width: 100%;
         margin-bottom: $spacing-md;
@@ -100,11 +114,33 @@ section {
 }
 
 @media (max-width: 800px) {
+
+    header img{
+        width: 450px ;
+        
+    }
     // Para pantallas de smartphones
-    header {
-        padding: $spacing-sm;
+    header  h1{
+        margin-top: 40px;
     }
 
+    h1{
+        margin-top: 20px;
+    }
+    header {
+        margin-bottom: 20%;
+        height: 300px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(2, 1fr));
+        gap: 20px;
+    }
+
+    .container{
+        margin: 0 auto;
+    }
     .card {
         margin-bottom: $spacing-sm;
     }
@@ -128,7 +164,8 @@ section {
 
     // Para la visualización de las tarjetas de equipos en modo lista
     .row {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     .col-md-6 {
@@ -139,10 +176,45 @@ section {
     .calendar-container table th, .calendar-container table td {
         padding: 5px;
     }
+    
+    .calendar-container table th {
+        font-size: 0.9rem;
+    }
+
+    .calendar-container table td {
+        font-size: 0.8rem;
+    }
+
+    .calendar-container table td:first-child {
+        font-weight: bold;
+    }
+
+    .calendar-container table td:nth-child(2) {
+        font-weight: bold;
+    }
+
+    .calendar-container table td:nth-child(3) {
+        font-weight: bold;
+    }
+
+    .calendar-container table td:nth-child(4) {
+        font-weight: bold;
+    }
+
+    .calendar-container table td:nth-child(5) {
+        font-weight: bold;
+    }
+
+    .calendar-container table td:nth-child(6) {
+        font-weight: bold;
+    }
+
+    
 }
 
 // Media Query para pantallas más pequeñas
 @media (max-width: 480px) {
+    
     header h1 {
         font-size: 1.5rem;
     }
@@ -166,12 +238,31 @@ section {
     .calendar-container table {
         font-size: 0.8rem;
     }
-}
 
-footer{
-    background: linear-gradient(135deg, $primary-color, darken($primary-color, 10%));
-    text-align: center;
-    color: $white;
+    footer{
+        padding: 5px;
+    }
+
+    .card-title {
+        font-size: $font-size-sm;
+    }
+
+    .card-text {
+        font-size: $font-size-sm;
+    }
+
+    .card-header {
+        font-size: $font-size-sm;
+    }
+
+    .card-body {
+        padding: $spacing-xs;
+    }
+
+    .card {
+        width: 100%;
+    }
+
 }
 
 // Animaciones generales
@@ -205,8 +296,6 @@ header {
 section h4 {
     animation: zoomIn 1.5s ease-out;
 }
-
-
 
 // Para el calendario
 .calendar-container {
